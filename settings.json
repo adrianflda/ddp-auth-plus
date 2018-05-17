@@ -1,0 +1,7 @@
+{
+    "DDPAuth": {
+        "secret": "secretKeyForEncryptedComunicationClientServer",
+        "type": "client",
+        "providerLoginURL": "http://localhost:3030"
+    }
+}
