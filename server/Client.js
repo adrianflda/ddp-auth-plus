@@ -65,6 +65,11 @@ export default class Client {
           this.setUserId(user._id)
           Meteor.server.sessions[this.connection.id].userLoginHashedToken = hashedToken
         }
+      },
+      bridge (methodName, userId, params, callback) {
+        check(userId, String)
+        this.setUserId(userId)
+        return Meteor.call(methodName, params, callback)
       }
     })
   }
