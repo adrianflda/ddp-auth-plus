@@ -1,9 +1,9 @@
 /* global Package */
 
 Package.describe({
-  name: 'tritrul:ddp-auth-plus',
-  version: '0.1.0',
-  summary: '',
+  name: 'amoreno:ddp-auth-plus',
+  version: '1.1.0',
+  summary: 'This package is useful for multiple apps centralized login.',
   git: 'https://github.com/tritrul/ddp-auth-plus.git',
   documentation: 'README.md'
 })

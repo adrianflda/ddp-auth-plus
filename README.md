@@ -35,7 +35,7 @@ for login provider app
 Calling remote methods authenticated
 
 clientApp
-import {DDPAuth} from 'meteor/tritrul:ddp-auth-plus'
+import {DDPAuth} from 'meteor/amoreno:ddp-auth-plus'
 Template.test.events({
   'click [name=button]' () {
     //Meteor.userId() loged user

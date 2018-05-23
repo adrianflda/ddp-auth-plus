@@ -41,3 +41,11 @@ Meteor.startup(function () {
     default:
   }
 })
+
+Meteor.methods({
+  bridge: function(methodName, userId, params, callback) {
+    check(userId, String)
+    this.setUserId(userId)
+    return Meteor.call(methodName, params, callback)
+  }
+})

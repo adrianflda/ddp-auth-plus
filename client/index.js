@@ -7,8 +7,10 @@ const DDPAuth = {
     instance.start()
   },
   remoteCall (connection, methodName, params, callback) {
-    this.registerLoginHandler(connection)
-    return connection.call(methodName, params, callback)
+    if (!Meteor.userId()) {
+      throw new Meteor.Error('not-authorized');
+    }
+    return connection.call(bridge, methodName, Meteor.userId(), params, callback)
   }
 }
 
