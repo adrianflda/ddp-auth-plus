@@ -10,7 +10,7 @@ const DDPAuth = {
     if (!Meteor.userId()) {
       throw new Meteor.Error('not-authorized');
     }
-    return connection.call(bridge, methodName, Meteor.userId(), params, callback)
+    return connection.call('bridge', methodName, Meteor.userId(), params, callback)
   }
 }
 
