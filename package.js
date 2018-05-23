@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'amoreno:ddp-auth-plus',
-  version: '1.1.1',
+  version: '1.1.2',
   summary: 'This package is useful for multiple apps centralized login.',
   git: 'https://github.com/tritrul/ddp-auth-plus.git',
   documentation: 'README.md'
